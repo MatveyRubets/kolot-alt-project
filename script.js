@@ -1,11 +1,15 @@
 // To append the article
 
 const article = document.querySelector("#newscenter__article");
+const newsRightPosts = document.querySelector(".newsright__posts");
 
 const loadSection = page => {
 	fetch(`./${page}`) // Fetching our local page (check pub.html)
 		.then(res => res.ok && res.text())
-		.then(section => (article.innerHTML = section));
+		.then(section => {
+			article.innerHTML = section;
+			newsRightPosts.style.display = "block";
+		});
 };
 
 // Responsive layout (Burger menu & Searchbox)
@@ -39,17 +43,19 @@ burgerBtn.addEventListener("click", () => {
 });
 
 // Tablet breakpoint
+const newsRight = document.querySelector(".newsright");
 const mediaTabletQuery = window.matchMedia("(max-width: 1080px)");
 const mediaDesktopQuery = window.matchMedia("(min-width: 1081px)");
 const mediaMobileQuery = window.matchMedia("(max-width: 768px)");
 
 const news = document.querySelector(".news");
-const newsRight = document.querySelector(".newsright");
 const newsLeft = document.querySelector(".newsleft");
 if (mediaTabletQuery.matches) {
 	newsRight.appendChild(newsLeft);
-} else if (mediaDesktopQuery.matches) {
+}
+if (mediaDesktopQuery.matches) {
 	news.prepend(newsLeft);
-} else if (mediaMobileQuery.matches) {
+}
+if (mediaMobileQuery.matches) {
 	news.appendChild(newsLeft);
 }
