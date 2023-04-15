@@ -44,8 +44,8 @@ burgerBtn.addEventListener("click", () => {
 
 // Tablet breakpoint
 const newsRight = document.querySelector(".newsright");
-const mediaTabletQuery = window.matchMedia("(max-width: 1080px)");
 const mediaDesktopQuery = window.matchMedia("(min-width: 1081px)");
+const mediaTabletQuery = window.matchMedia("(max-width: 1080px)");
 const mediaMobileQuery = window.matchMedia("(max-width: 768px)");
 
 const news = document.querySelector(".news");

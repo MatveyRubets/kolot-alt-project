@@ -315,6 +315,10 @@ a:hover {
 		line-height: 23px;
 	}
 
+	.newscenter__heading {
+		padding: 21px 0;
+	}
+
 	.newscenter__posts {
 		padding: 39px 0;
 	}
