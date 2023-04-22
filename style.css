@@ -190,9 +190,9 @@ a:hover {
 .navbar__link {
 	position: relative;
 	text-transform: uppercase;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 28px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 23px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -265,7 +265,11 @@ a:hover {
 	gap: 20px;
 }
 
-/* Leftside news section */
+/* Center News section */
+
+.newscenter {
+	background: white;
+}
 
 .newscenter__img {
 	padding: 0;
@@ -423,7 +427,9 @@ a:hover {
 		line-height: 23px;
 		background: #ffffff;
 	}
-	.newscenter__article-content,
+	.newscenter__article-content {
+		padding: 0;
+	}
 	.newscenter__article-heading {
 		padding: 0;
 	}
@@ -432,10 +438,8 @@ a:hover {
 	}
 }
 
-/* Rightside news section */
-/* Deep leftside */
+/* Rightside News section */
 
-/* Cards */
 .newsright__posts {
 	margin-bottom: 40px;
 	display: none;
