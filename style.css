@@ -32,6 +32,11 @@ a:hover {
 .container {
 	padding: 0 60px;
 }
+@media screen and (min-width: 1400px) {
+	.container {
+		padding: 0 200px;
+	}
+}
 @media screen and (max-width: 1080px) {
 	.container {
 		padding: 0 30px;
@@ -455,7 +460,7 @@ a:hover {
 	background: #fff;
 }
 .newsright__card-content {
-	padding: 20px 50px 46px;
+	padding: 25px 54px;
 }
 .newsright__card-img {
 	width: 100%;
@@ -502,7 +507,7 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 44px;
+	gap: 53px;
 }
 .newsleft__advert {
 	background: #ffffff;
@@ -533,6 +538,7 @@ a:hover {
 @media screen and (max-width: 1080px) {
 	.newsleft__adverts {
 		margin-top: 44px;
+		gap: 43px;
 	}
 }
 
